@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>D3 Heat Map</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+        <h2 id="description">1753 - 2015: base temperature 8.66℃</h2>
+        <div id="tooltip"></div>
+        <svg id="canvas"></svg>
+        <svg id="legend" width="250" height="200">
+            <g>
+                <rect x="10" y="0" width="40" height="40" fill="var(--cool-1)"></rect>
+                <text x="60" y="20" fill="var(--text-1)">Variance of -2 or less</text>
+              </g>
+              <g>
+                <rect x="10" y="40" width="40" height="40" fill="var(--cool-2)"></rect>
+                <text x="60" y="60" fill="var(--text-1)">Below Average</text>
+              </g>
+              <g>
+                <rect x="10" y="80" width="40" height="40" fill="var(--lukewarm-1)"></rect>
+                <text x="60" y="100" fill="var(--text-1)">Average</text>
+              </g>
+              <g>
+                <rect x="10" y="120" width="40" height="40" fill="Orange"></rect>
+                <text x="60" y="140" fill="var(--text-1)">Above Average</text>
+              </g>
+              <g>
+                <rect x="10" y="160" width="40" height="40" fill="Crimson"></rect>
+                <text x="60" y="180" fill="var(--text-1)">Variance of 2 or more</text>
+              </g>
+        </svg>
+    </div>
+</body>
+<script defer src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
