@@ -96,7 +96,7 @@ const drawCells = () => {
                     .style('visibility', 'visible')
 
                 tooltip.text(v['year'] + ' ' + months[v['month'] - 1] + ' temp: '
-                 + (v['variance'] + basetemp) + ' - variance' + v['variance']) 
+                 + (v['variance'] + basetemp) + ' - variance: ' + v['variance']) 
 
                  tooltip.attr('data-year', v['year'])
             })
